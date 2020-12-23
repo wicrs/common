@@ -84,9 +84,9 @@ impl User {
 /// Represents the publicly available information on a user, (excludes their email address and the service they signed up with) also only includes the generic version of accounts.
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq)]
 pub struct GenericUser {
-    id: String,
-    created: u128,
-    users: HashMap<ID, GenericAccount>,
+    pub id: String,
+    pub created: u128,
+    pub users: HashMap<ID, GenericAccount>,
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq)]
