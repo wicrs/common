@@ -7,7 +7,7 @@ pub mod api_types;
 pub mod permissions;
 pub mod types;
 
-const NAME_ALLOWED_CHARS: &str =
+pub const NAME_ALLOWED_CHARS: &str =
     " .,_-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 pub type ID = Uuid;
