@@ -1,0 +1,16 @@
+[package]
+name = "wicrs_common"
+version = "0.1.0"
+authors = ["willemml <willem@leit.so>"]
+edition = "2018"
+license = "MIT"
+description = "Code shared by the wicrs projects."
+repository = "https://github.com/wicrs/common"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0.118", features = ["derive"] }
+serde_json = "1.0.60"
+uuid = { version = "0.8.1", features = ["v4", "serde"] }
+sha2 = "0.9.2"
