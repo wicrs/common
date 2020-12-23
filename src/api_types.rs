@@ -32,6 +32,23 @@ pub struct ChannelCreateQuery {
     pub name: String,
 }
 
+/// Data required for /api/v1/hubs/rename_channel
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq)]
+pub struct ChannelRenameQuery {
+    pub account: ID,
+    pub hub: ID,
+    pub channel: ID,
+    pub new_name: String
+}
+
+/// Data required for /api/v1/hubs/delete_channel
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq)]
+pub struct ChannelDeleteQuery {
+    pub account: ID,
+    pub hub: ID,
+    pub channel: ID,
+}
+
 /// Data required for /api/v1/hubs/send_message
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq)]
 pub struct MessageSendQuery {
