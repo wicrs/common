@@ -3,7 +3,7 @@ name = "wicrs_common"
 version = "0.1.2"
 authors = ["willemml <willem@leit.so>"]
 edition = "2018"
-license = "MIT"
+license = "GPL-3.0"
 description = "Code shared by the wicrs projects."
 repository = "https://github.com/wicrs/common"
 
