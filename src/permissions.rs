@@ -21,11 +21,12 @@ pub enum HubPermission {
     ArrangeChannels,
     SendMessage,
     ReadMessage,
-    MuteUser,
     Invite,
+    Unmute,
+    Mute,
     Kick,
     Ban,
-    Mute,
+    Unban,
     AddBot,
 }
 
@@ -48,7 +49,7 @@ impl ChannelPermission {
             ChannelPermission::ReadMessage => HubPermission::ReadMessage,
             ChannelPermission::ViewChannel => HubPermission::ViewChannels,
             ChannelPermission::Configure => HubPermission::ConfigureChannels,
-            ChannelPermission::MuteUser => HubPermission::MuteUser,
+            ChannelPermission::MuteUser => HubPermission::Mute,
             ChannelPermission::All => HubPermission::All,
         }
     }

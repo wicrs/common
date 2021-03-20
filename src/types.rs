@@ -128,7 +128,7 @@ pub struct Channel {
     #[serde(skip)]
     pub messages: Vec<Message>,
     pub id: ID,
-    pub server_id: ID,
+    pub hub_id: ID,
     pub name: String,
     pub created: u128,
 }
